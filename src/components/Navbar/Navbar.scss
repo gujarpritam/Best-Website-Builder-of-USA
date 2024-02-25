@@ -1,0 +1,43 @@
+.container{
+  width: 100vw;
+  height: 7vh;
+  background: rgb(8, 2, 22);
+}
+
+.innerContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+  margin: auto;
+  height: 100%;
+  background:rgb(8, 2, 22);
+}
+
+.inputBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    width: 30%;
+    border-radius: 10px;
+    background: white;
+}
+
+.nav-input{
+    height: 85%;
+    width: 80%;
+    border-radius: 10px;
+    border: none;
+}
+
+.nav-search{
+height: 20px;
+width: 20px;
+}
+
+.nav-elements{
+color: rgb(224, 224, 224);
+height: auto;
+width: auto;
+}
