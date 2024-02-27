@@ -6,7 +6,6 @@ $whiteBG: white;
 main{
   width: 80%;
   margin: auto;
-  border: 1px solid red;
 }
 
 h1{
@@ -16,11 +15,29 @@ h1{
 .info{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-start;  
+  flex-wrap: wrap;
   margin: 1% 0%;
   position: relative;
   color: $text-color;
   padding: 10px 0px;
+}
+
+.info > span{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap; 
+}
+
+.info img{
+  height: 15px;
+  width: 15px;
+}
+
+.route img{
+  height: 10px;
+  width: 10px;
 }
 
 .line{
@@ -39,6 +56,7 @@ h1{
 .categories{
   display: flex;
   color: $text-color;
+  margin: 1% 0%;
 }
 
 .category{
@@ -47,7 +65,9 @@ h1{
 
 .route{
   display: flex;
+  align-items: center;
   color: $text-color;
+  margin-bottom: 1%;
 }
 
 .sub-heading{
@@ -57,8 +77,6 @@ h1{
 .route-info{
   margin: 1% 1%;
 }
-
-
 
 
 .main-box{
@@ -87,7 +105,6 @@ align-items: center;
 .main-box div:nth-child(2){
   width: 50%;
   padding: 20px 0px;
-  border: 1px solid rgba(18, 18, 110, 0.992);
 }
 
 .ratings{
@@ -98,7 +115,6 @@ align-items: center;
   width: 20%;
   height: 200px;
   color: blue; 
-  border: 1px solid red;
 }
 
 .ratings *{
@@ -133,6 +149,7 @@ background: rgb(225, 247, 255);
   display: flex;
   color: rgb(0, 128, 255);
   width: auto;
+  margin-top: 1%;
 }
 
 .show-more p{
@@ -203,7 +220,9 @@ margin: 10px;
 border-radius: 5px;
 }
 
-
+main > .sub-heading{
+  margin-top: 5%;
+}
 
 
 .related-deals{
@@ -241,4 +260,98 @@ border-radius: 5px;
   padding: 10px 0px;
   border: none;
   box-sizing: border-box;
+}
+
+.view-button-bg{
+  background:  rgb(44, 97, 255);
+}
+
+@media (max-width: 770px){
+main{
+  width: 95%;
+}
+.top-relevant{
+  position: static;
+  height: auto;
+} 
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+}
+
+@media (max-width: 615px){
+  .related-deals{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 0px auto;
+  }
+}
+
+@media (max-width: 485px){
+  main{
+    font-size: small;
+  }
+
+  h1{
+    font-size: x-large;
+  }
+  
+.info, .categories, .route{
+  font-size: small;
+}
+
+.category{
+  padding: 1% 1%;
+}
+
+.main-box > div:first-child > img{
+  height: 50px;
+  width: 70px;
+}
+
+.ratings{
+  height: 200px;
+}
+
+.ratings > div{
+  padding: 3px;
+}
+
+.ratings > div span:first-child{
+  font-size: x-large;
+}
+
+.round-tick{
+  height: 15px;
+  width: 15px;
+  margin-right: 5px;
+}
+
+.related-deals{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  margin: 0px auto;
+}
+
+.sign-up-box{
+  width: 60%;
+}
+
+.sign-up{
+  width: 40%;
+}
+
+.ratings > .view-button-bg{
+  background:  rgb(44, 97, 255);
+}
+
 }

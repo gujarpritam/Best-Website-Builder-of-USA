@@ -1,7 +1,7 @@
 import React from "react";
+import Button from "../Button/Button";
 import "./Deals.scss";
 import Desktop from "../../assets/desktop.png";
-import Button from "../Button/Button";
 
 function Deals() {
   return (

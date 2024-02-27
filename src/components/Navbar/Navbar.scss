@@ -48,7 +48,17 @@ background:none;
 }
 
 @media (max-width: 770px){
-  // .innerContainer{   
-  //   width: 90%;
-  // }
+  .innerContainer{   
+    width: 90%;
+  }
+
+  .inputBox{
+    height: 30px;
+}
+}
+
+@media (max-width: 485px){
+  .nav-elements{
+    font-size: small;
+  }
 }

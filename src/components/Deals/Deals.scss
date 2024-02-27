@@ -1,34 +1,36 @@
 $bgcolor: none;
 $detailsPadding: 5px;
 $text-color: grey;
-// $small-font: ;
 
 .deals{
   display: flex;
   flex-direction: column;
   align-items: center;
   background: white;
-  // border: 2px solid blue;
   border-radius: 10px;
+  margin: 1% 1%;
 }
 
 .image{
   margin: 10% 0%;
 }
 
-.info{
+.deals > div.info{
   display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
   width: 100%;
   background: $bgcolor;
   border: none;
 }
 
-.box{
+.info > .box{
   color: rgb(26, 26, 254);
   background: rgb(239, 242, 250);
   border-radius: 5px;
   margin: 0px 5px;
   padding: 5px 10px;
+  width: auto;
 }
 
 .webbuilder{
@@ -70,4 +72,16 @@ $text-color: grey;
   padding: 0px $detailsPadding;
   font-size: 10px;
   color: red;
+}
+
+@media (max-width: 485px){
+  div.deals{
+    margin: 2% 0%;
+  }
+}
+
+@media (max-width: 710px){
+  .info .box{
+    font-size: small;
+  }
 }

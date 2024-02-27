@@ -1,18 +1,19 @@
 import React from "react";
-import "./Main.scss";
 import Deals from "../Deals/Deals";
+
+import "./Main.scss";
 import UpdatedTick from "../../assets/updated-tick.png";
 import AdvertisingDisclosure from "../../assets/advertising-disclosure.png";
 import DownArrow from "../../assets/down-arrow.png";
 import RightArrow from "../../assets/right-arrow.png";
 import Desktop from "../../assets/desktop.png";
-import Button from "../Button/Button";
 import RoundedTick from "../../assets/rounded-tick.png";
 import FiveStar from "../../assets/five-star.png";
 import FourAndHalfStar from "../../assets/four-and-half-star.png";
 import FourStar from "../../assets/four-star.png";
 import BestChoice from "../../assets/best-choice.png";
 import BestValue from "../../assets/best-value.png";
+import Button from "../Button/Button";
 
 function Main() {
   return (
@@ -21,11 +22,17 @@ function Main() {
 
       <div className="line"></div>
       <div className="info">
-        <img className="info-img" src={UpdatedTick} />
-        <div>&nbsp;Last Updated - &nbsp;</div>
-        <div>February 22, 2020&nbsp;&nbsp;&nbsp;&nbsp;</div>
-        <img className="info-img" src={AdvertisingDisclosure} />
-        <div>&nbsp;Advertising Disclosure</div>
+        <span>
+          <img className="info-img" src={UpdatedTick} />
+          <div>&nbsp;Last Updated - &nbsp;</div>
+          <div>February 22, 2020&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        </span>
+
+        <span>
+          <img className="info-img" src={AdvertisingDisclosure} />
+          <div>&nbsp;Advertising Disclosure</div>
+        </span>
+
         <div className="top-relevant">
           Top Relevant <img className="info-img" src={DownArrow} />
         </div>
@@ -84,7 +91,7 @@ function Main() {
               <span>Exceptional</span>
               <img src={FiveStar} />
             </div>
-            <Button name="View" />
+            <Button className="view-button-bg" name="View" />
           </div>
 
           <div>1</div>
@@ -122,7 +129,7 @@ function Main() {
               <span>Excellent</span>
               <img src={FourAndHalfStar} />
             </div>
-            <Button name="View" />
+            <Button className="view-button-bg" name="View" />
           </div>
 
           <div>2</div>
@@ -139,7 +146,7 @@ function Main() {
             <h5>Builder 1</h5>
           </div>
           <div>
-            <span>WixPro 72-Inch Responsive Website Builder-</span>{" "}
+            <strong>WixPro 72-Inch Responsive Website Builder-</strong>{" "}
             Comprehensive Digital Platform Creation Tool, Streamlined Design
             Interface for Professional Websites and Online Stores (Black/Blue)
             <h4>
@@ -160,7 +167,7 @@ function Main() {
               <span>Exceptional</span>
               <img src={FiveStar} />
             </div>
-            <Button name="View" />
+            <Button className="view-button-bg" name="View" />
           </div>
 
           <div>3</div>
@@ -172,8 +179,8 @@ function Main() {
             <h5>CDK</h5>
           </div>
           <div>
-            <span>CDK Resposive Builder:</span> An extensive library of widgets
-            and apps, and detailed step-by-step guides
+            <strong>CDK Resposive Builder:</strong> An extensive library of
+            widgets and apps, and detailed step-by-step guides
             <p className="main-discount">(26% Off)</p>
             <h4>
               <strong>Main highlights </strong>
@@ -196,15 +203,15 @@ function Main() {
               <span>Why we love it</span>
             </h4>
             <div>
-              <img src={RoundedTick} />
+              <img className="round-tick" src={RoundedTick} />
               <span>Documentation</span>
             </div>
             <div>
-              <img src={RoundedTick} />
+              <img className="round-tick" src={RoundedTick} />
               <span>Easy Use</span>
             </div>
             <div>
-              <img src={RoundedTick} />
+              <img className="round-tick" src={RoundedTick} />
               <span>Out Of Box</span>
             </div>
             <div className="show-more">
@@ -219,7 +226,7 @@ function Main() {
               <span>Very Good</span>
               <img src={FourStar} />
             </div>
-            <Button name="View" />
+            <Button className="view-button-bg" name="View" />
           </div>
 
           <div>4</div>
