@@ -1,0 +1,73 @@
+$bgcolor: none;
+$detailsPadding: 5px;
+$text-color: grey;
+// $small-font: ;
+
+.deals{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  // border: 2px solid blue;
+  border-radius: 10px;
+}
+
+.image{
+  margin: 10% 0%;
+}
+
+.info{
+  display: flex;
+  width: 100%;
+  background: $bgcolor;
+  border: none;
+}
+
+.box{
+  color: rgb(26, 26, 254);
+  background: rgb(239, 242, 250);
+  border-radius: 5px;
+  margin: 0px 5px;
+  padding: 5px 10px;
+}
+
+.webbuilder{
+  font-weight: bold;
+  background: $bgcolor;
+  color:$text-color;
+}
+
+.text{
+  background: $bgcolor;
+  padding: $detailsPadding;
+  color:$text-color;
+}
+
+.purchase-details{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+ background: $bgcolor;
+  padding: $detailsPadding;
+  width: 100%;
+  color:$text-color;
+}
+
+.price1{
+  background: $bgcolor;
+  padding: 0px $detailsPadding;
+}
+
+.price2{
+  background: $bgcolor;
+  padding: 0px $detailsPadding;
+  font-size: 10px;
+  height: auto;
+}
+
+.discount{
+  background: $bgcolor;
+  padding: 0px $detailsPadding;
+  font-size: 10px;
+  color: red;
+}

@@ -1,0 +1,44 @@
+$bgcolor: none;
+
+.footer{
+  background: black;
+  color: white;
+  height: 50vh;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  font-weight: 200;
+}
+
+.container1, .container2, .container3, li, h4, .country-name, .arrow{
+background: $bgcolor;
+}
+
+.container1, .container2, .container3{
+  margin-top: 5%;
+}
+
+.container3{
+  display: flex;
+  margin-top: 10%;
+}
+
+h4{
+  font-weight: 500;
+  padding: 5px;
+}
+
+ul{
+  background: $bgcolor;
+  list-style: none;
+}
+
+li{
+  padding: 5px;
+}
+
+.arrow{
+  height: 20px;
+  width: 20px;
+}
