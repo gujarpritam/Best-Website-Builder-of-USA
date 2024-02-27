@@ -67,7 +67,7 @@ h1{
   display: flex;
   align-items: center;
   color: $text-color;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 .sub-heading{
@@ -141,6 +141,16 @@ background: rgb(225, 247, 255);
   font-size: xx-large;
 }
 
+.ratings > .view{
+  background: rgb(44, 97, 255);
+  color: white;
+  border-radius: 10px;
+  width: 90%;
+  padding: 10px 0px;
+  margin: 2% 0%;
+  border: none;
+}
+
 .main-box *{
   background: $whiteBG;
 }
@@ -196,6 +206,7 @@ border-bottom-right-radius: 5px;
   font-size: 10px;
   color: rgb(63, 63, 255);
   width: 45px;
+  margin:3% ;
 }
 
 .main-sub-box4{
@@ -262,9 +273,6 @@ main > .sub-heading{
   box-sizing: border-box;
 }
 
-.view-button-bg{
-  background:  rgb(44, 97, 255);
-}
 
 @media (max-width: 770px){
 main{
@@ -293,7 +301,7 @@ main{
   }
 }
 
-@media (max-width: 485px){
+@media (max-width: 535px){
   main{
     font-size: small;
   }
@@ -348,10 +356,6 @@ main{
 
 .sign-up{
   width: 40%;
-}
-
-.ratings > .view-button-bg{
-  background:  rgb(44, 97, 255);
 }
 
 }

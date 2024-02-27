@@ -91,7 +91,7 @@ function Main() {
               <span>Exceptional</span>
               <img src={FiveStar} />
             </div>
-            <Button className="view-button-bg" name="View" />
+            <button className="view">View</button>
           </div>
 
           <div>1</div>
@@ -129,7 +129,7 @@ function Main() {
               <span>Excellent</span>
               <img src={FourAndHalfStar} />
             </div>
-            <Button className="view-button-bg" name="View" />
+            <button className="view">View</button>
           </div>
 
           <div>2</div>
@@ -167,7 +167,7 @@ function Main() {
               <span>Exceptional</span>
               <img src={FiveStar} />
             </div>
-            <Button className="view-button-bg" name="View" />
+            <button className="view">View</button>
           </div>
 
           <div>3</div>
@@ -226,7 +226,7 @@ function Main() {
               <span>Very Good</span>
               <img src={FourStar} />
             </div>
-            <Button className="view-button-bg" name="View" />
+            <button className="view">View</button>
           </div>
 
           <div>4</div>
